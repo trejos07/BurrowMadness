@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d3f6825e94bfc047938f656a3427a26, type: 3}
+  m_Name: Latem
+  m_EditorClassIdentifier: 
+  itemName: Latem
+  groundSprite: {fileID: 21300000, guid: b87e82de019fa3c499f0bae01d0bf6c7, type: 3}
+  inventorySprite: {fileID: 21300000, guid: b87e82de019fa3c499f0bae01d0bf6c7, type: 3}
+  color: {r: 0.6693218, g: 0.8364802, b: 0.8396226, a: 1}
+  hardness: 0.24
+  deathLimit: 4
+  birthLimit: 6
+  chance: 50

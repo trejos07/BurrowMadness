@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<subMisionDataBase xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <PosibleSubMisions>
+    <subMisionInfo>
+      <ItemName>cobalto</ItemName>
+      <Amount>3</Amount>
+    </subMisionInfo>
+    <subMisionInfo>
+      <ItemName>latem</ItemName>
+      <Amount>5</Amount>
+    </subMisionInfo>
+    <subMisionInfo>
+      <ItemName>cobalto</ItemName>
+      <Amount>10</Amount>
+    </subMisionInfo>
+  </PosibleSubMisions>
+</subMisionDataBase>
