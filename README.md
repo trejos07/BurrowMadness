@@ -10,6 +10,22 @@ máquina con las armas más potentes de toda la galaxia, atrévete a llegar
 a las profundidades de los planetas, saquea las mazmorras y conviertete en
 un verdadero aventurero interplanetario.
 
+# Tutorial Para Testing
+Para la versiòn actual:
+- Utiliza el joystick izquierdo para moverte por el mundo, 
+los movimientos horizontales hacen que tu maquina navege
+- En caso de que te encuentres con tierra no te detengas,
+ puedes excavar y forjar tu propio camino.
+- los puntos rojos representan los enemigos, te perseguiran
+si nte encuentran.
+- Disparales a los enemigos usando el joystick derecho, puedes
+presionarlo para disparar al mas cercano o apuntarles a tu gusto.
+- descubre y recolecta minerales que encuentres por todo el planeta 
+excavando hacia ellos.
+- Cuidado con las caidas de grandes alturas, pueden dañar tu
+màquina. 
+
+
 # Elementos Característicos
 - Joystick de movimiento ubicado a la izquierda de la pantalla.
 - Joystick de disparo a la derecha de la pantalla.
@@ -48,4 +64,5 @@ a preferencia del usuario.
 
 # Bugs Vigentes
 - las misiones funcionan en la versión ejecutable de pc pero no en el apk para móviles.
+- La navegaciòn sin usar el vuelo se dificulta por la fricciòn que genera el suelo.
 
