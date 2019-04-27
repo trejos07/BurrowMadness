@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: BackGround_Tile
   m_EditorClassIdentifier: 
   m_Sprite: {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  m_Color: {r: 0.3301887, g: 0.07320221, b: 0.07320221, a: 1}
+  m_Color: {r: 0.20289361, g: 0.32515776, b: 0.22149724, a: 1}
   m_Transform:
     e00: 1
     e01: 0
@@ -32,15 +32,54 @@ MonoBehaviour:
     e32: 0
     e33: 1
   m_InstancedGameObject: {fileID: 0}
-  m_Flags: 1
+  m_Flags: 3
   m_ColliderType: 0
+  id: 1
   m_Sprites:
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
-  - {fileID: 21300000, guid: fe15b598f38564647bc83a8de4069af3, type: 3}
+  - {fileID: 21300250, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300252, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300254, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300256, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300258, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300260, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300262, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300264, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300266, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300268, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300270, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300272, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300274, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300276, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300278, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300280, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300282, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300284, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300286, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300290, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300292, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300294, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300296, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300298, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300300, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300302, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300304, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300306, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300308, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300310, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300312, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300314, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300316, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300318, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300320, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300322, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300324, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300326, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300328, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300330, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300332, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300334, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300336, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300338, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300340, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300342, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
+  - {fileID: 21300344, guid: 385dbd27810daeb4b9796a1153007349, type: 3}
