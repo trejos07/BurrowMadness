@@ -69,3 +69,77 @@ a preferencia del usuario.
 - las misiones funcionan en la versión ejecutable de pc pero no en el apk para móviles.
 - La navegaciòn sin usar el vuelo se dificulta por la fricciòn que genera el suelo.
 
+
+
+
+# Entrega Beta Domingo 12 de Mayo
+
+
+# Recursos De Terceros
+
+## Simple UI de Unity (Para el User Interface Del juego) 
+       - Se Usaron Los Botones PNG
+       - Se Usaron los Simple Vector Icons
+       - Se Usó FredokaOne-Regular (Fuente del paquete Simple UI)
+
+## Basic Joystick Pack de Fenerax Studios  (Para los joysticks del juego) 
+       - Se Implementó el fixed Joystick del paquete
+       - Se usaron 2 BackgroundSprites 
+       - Se usaron 2 Handle Sprites
+       - Se usaron eventos para comunicar los inputs del joystick con las acciones del jugador.
+
+## Priority Queue de BlueRaja (Optimizacion del pathfinder de los enemigos)
+       - Utilización de la librería PriorityQueue
+       - Referencias a FastPriorityQueue
+
+## Unity Ads y Textmesh pro de Unity (Uso básico)
+       - Textmesh para inlcuir texto en las interfaces 
+       - Unity Ads para incluir Ads (duh) entre sesiones y monetizar en el futuro lanzamiento.
+
+## Arte Galaxy Map Background de Freepik
+## Uso de Prop de Kenney
+       
+
+
+# Recursos Propios
+
+# Arte
+
+## Sprites de Armas
+   * Escopeta Pixel Art
+   * Cañon Pixel Art
+   * Ametralladora Pixel Art
+   * Pistolaa Pixel Art
+   * 4 Máscaras para recolorizar cada una de las armas.
+
+## Sprites de Enemigos
+   * 4 enemigos en 128 x 128 (2 enemigos implementados)
+   * Brazos por separado de los enemigos para animación de estos (versión a posteriori)
+   
+## Sprites de Personaje
+   * Sprite básico de personaje
+   * Animación en 8 Frames de propulsor de personaje
+   * Animación en 3 Frames de taladro de personaje
+   
+## Tiles Mundo
+   * Spritesheet de todos los tiles necesarios para la construcción de los mundos
+   * Capa RGB sobre el spritesheet de Tiles para cambiar los colores de acuerdo al mundo
+   * Mapa de Normales de los tiles de los spritesheet
+   * Shader RGB Mask
+   
+## Scriptable Objects
+
+   * Se usaron 4 diferentes con el mismo fin de determinar los tiles gráficos que se deben usar en cada situación que se presente conforme se construye y destruye el mundo.
+   
+## Librerías nativas de C
+
+  * Se usan para traducir los mundos generados a XML
+  * Se usan para traducir de XML a objetos dentro de los archivos del juego.
+  
+## Scripts de Editor
+
+  * 3 Scripts de Editor hechos por el programador en jefe, se utilizan para manipular los mundos desde el editor, tanto para crearlos     como guardarlos a mano.
+   
+   
+   
+
