@@ -24,6 +24,23 @@ public class World : MonoBehaviour
 
     private Material pixelShader;
 
+    public Tilemap GroundTileMap
+    {
+        get
+        {
+            return tileMaps[0];
+        }
+    }
+
+    public WorldInfo WorldInfo
+    {
+        get
+        {
+            return worldInfo;
+        }
+        
+    }
+
     #endregion
 
     public delegate void DestructingTile();
@@ -131,7 +148,7 @@ public class World : MonoBehaviour
         ground = Resources.Load<Tile>("Tiles/Ground_Tile");
         backGround = Resources.Load<Tile>("Tiles/BackGround_Tile");
         SpawnerPrefab = Resources.Load<GameObject>("Prefabs/Spawner");
-        chunkSize = GameManager.ins.Settings.chunkSize;
+        chunkSize = GameManager.Instance.Settings.chunkSize;
 
         width = worldInfo.worldSizeInChunks.x;
         heigth = worldInfo.worldSizeInChunks.y;
@@ -159,11 +176,14 @@ public class World : MonoBehaviour
         SetDungeons();
         SetUpWorld();
         navMesh = NodeNavMesh.CreateNavMesh(gameObject, tileMaps[0]);
-        //tileMaps[0].GetComponent<TilemapRenderer>().material = Resources.Load<Material>("Materials/GoundMat");
+        tileMaps[0].GetComponent<TilemapRenderer>().material = Resources.Load<Material>("Materials/GoundMat");
+        tileMaps[0].GetComponent<TilemapRenderer>().material.SetColor("_Color1", worldInfo.color);
+        
         SetSpawners();
         SetWorldLimits();
         FindObjectOfType<Player>().OnDiggingToDir += CheckDestruction;
         worldInfo.Save();
+        TransformUtility.ChangeLayersRecursively(transform, gameObject.layer);
     }
     public void SetUpWorld()
     {
@@ -269,7 +289,7 @@ public class World : MonoBehaviour
     {
         if(worldInfo.nroDungeons>0)
         {
-            List<ChunkInfo> posibleDungeons = XMLManager.LoadFolderData<ChunkInfo>(XMLManager.CHUNKINFO_FOLDER_NAME);
+            List<ChunkInfo> posibleDungeons = XMLManager.LoadFromResourcesData<ChunkInfo>(XMLManager.CHUNKINFO_FOLDER_NAME.Remove(XMLManager.CHUNKINFO_FOLDER_NAME.Length - 1));
             for (int i = 0; i < worldInfo.nroDungeons; i++)
             {
                 int x=UnityEngine.Random.Range(1,width);
@@ -288,7 +308,7 @@ public class World : MonoBehaviour
             for (int i = 0; i < worldInfo.nroSpawners; i++)
             {
                 bool gotaNode = false;
-                int trys = 20;
+                int trys = 30;
                 while (!gotaNode  )
                 {
                     if (trys <= 0)
@@ -314,7 +334,7 @@ public class World : MonoBehaviour
                     else
                     {
                         float d = Vector3.Distance(spawnNode.WorldPos, Vector3.down*(chunkSize.y*heigth/2));
-                        if (d > (chunkSize * worldInfo.worldSizeInChunks).magnitude*(1f/3f))
+                        if (d > (chunkSize * worldInfo.worldSizeInChunks).magnitude*(1f/2f))
                         {
                             gotaNode = true;
                         }
@@ -431,16 +451,35 @@ public class World : MonoBehaviour
     }
     private Tilemap SetupTilemap()
     {
-
         GameObject tm = new GameObject("worldLayer");
         Tilemap tilemap = tm.AddComponent<Tilemap>();
+        //tilemap.origin = Vector3Int.FloorToInt(transform.position);
         tm.AddComponent<TilemapRenderer>().material = pixelShader;
-        tm.AddComponent<TilemapCollider2D>();
-        tm.transform.position = transform.position;
+        Collider2D ctm = tm.AddComponent<TilemapCollider2D>();
+        //ctm.usedByComposite = true;
+        Rigidbody2D rtm = tm.AddComponent<Rigidbody2D>();
+        rtm.position = transform.position;
+        rtm.bodyType = RigidbodyType2D.Static;
+        //CompositeCollider2D cctm = tm.AddComponent<CompositeCollider2D>();
+        //cctm.generationType = CompositeCollider2D.GenerationType.Synchronous;
         tm.transform.SetParent(transform);
-
         return tilemap;
+
     }
+    
     #endregion
+
+}
+
+public class TransformUtility
+{
+    public static void ChangeLayersRecursively(Transform trans, LayerMask layer)
+    {
+        trans.gameObject.layer = layer;
+        foreach (Transform child in trans)
+        {
+            ChangeLayersRecursively(child,layer);
+        }
+    }
 
 }

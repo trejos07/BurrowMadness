@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] GameObject prefabToSpawn;
+    [SerializeField] int EnemyID;
     [SerializeField] float spawnRatio;
     [SerializeField] float maxVariationSRatio;
     [SerializeField] float radiusSpawnArea;
     [SerializeField] int maxPrefabsInArea;
     [SerializeField] LayerMask layerPrefab;
 
+
     Vector3 worldPos;
+    List<Node> nodes;
 
     bool isSpawning=false;
-
     public Vector3 WorldPos
     {
         get
@@ -27,7 +28,6 @@ public class Spawner : MonoBehaviour
             worldPos = value;
         }
     }
-
     public float RadiusSpawnArea
     {
         get
@@ -49,28 +49,35 @@ public class Spawner : MonoBehaviour
 
     private void Start()
     {
+        NodeNavMesh navMesh = FindObjectOfType<NodeNavMesh>();
+        Node mNode = navMesh.NodeFromWorldPoint(transform.position);
+        nodes = navMesh.GetNodesArraund(mNode, ((int)RadiusSpawnArea/2));
         StartCoroutine(Spawning());
     }
-
     public int CountPrefabsInArea()
     {
-        return Physics2D.OverlapCircleAll(transform.position, radiusSpawnArea, layerPrefab).Length;
+        int n = Physics2D.OverlapCircleAll(transform.position, radiusSpawnArea, layerPrefab).Length;
+        return n;
     }
-
+    public void Spawn ()
+    {
+        Vector3 wPos = nodes[Random.Range(0, nodes.Count)].WorldPos;
+        Enemy e =  GameplayManager.Instance.WorldEnemyFactory.GetEnemyAt(wPos, transform.rotation.z);
+    }
     public IEnumerator Spawning()
     {
         isSpawning = true;
         while(CountPrefabsInArea()<maxPrefabsInArea)
         {
+
             float nextSpawnR = Random.Range(spawnRatio - maxVariationSRatio, spawnRatio + maxVariationSRatio);
             yield return new WaitForSeconds(nextSpawnR);
-            Instantiate(prefabToSpawn, transform.position, Quaternion.identity);
+            Spawn();
         }
         isSpawning = false;
         StartCoroutine(CheckArea());
 
     }
-
     public IEnumerator CheckArea()
     {
         while (!isSpawning)
@@ -82,7 +89,6 @@ public class Spawner : MonoBehaviour
 
         }
     }
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.magenta;

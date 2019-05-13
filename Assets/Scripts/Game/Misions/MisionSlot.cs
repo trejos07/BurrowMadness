@@ -35,6 +35,19 @@ public class MisionSlot : MonoBehaviour
         }
     }
 
+    public Image MisionIcon
+    {
+        get
+        {
+            return misionIcon;
+        }
+
+        set
+        {
+            misionIcon = value;
+        }
+    }
+
     public static MisionSlot CreateComponent(GameObject where, MisionInfo _mision)
     {
         where.name = "Slot";
@@ -49,7 +62,7 @@ public class MisionSlot : MonoBehaviour
     {
         panel = GetComponent<Image>();
         button = GetComponent<Button>();
-        misionIcon = transform.Find("Mision_Name").GetComponent<Image>();
+        misionIcon = transform.Find("Image").GetComponent<Image>();
         misionName = transform.Find("Mision_Name").GetComponent<TextMeshProUGUI>();
         MisionSelectionMenu.Instance.OnMisionSelected += OnSelection;
         MisionSelectionMenu.Instance.OnMisionActive += OnActive;
@@ -88,7 +101,7 @@ public class MisionSlot : MonoBehaviour
 
     public void UpdateGui()
     {
-        panel.color = info.completed ? Color.green : Color.white;
+        panel.color = info.completed ? Color.green : new Color(1, 1, 1, 0.5f); ;
         misionName.text = info.name;
 
     }

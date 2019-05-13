@@ -2,7 +2,6 @@
 
 public class Attack : Task
 {
-    [SerializeField] Character character;
     [SerializeField] float cD;
     bool canAttack = true;
 
@@ -10,14 +9,22 @@ public class Attack : Task
     {
         if (canAttack == true)
         {
-            canAttack = false;
-            //character.SpawnBullet();
-            Invoke("resetCD", cD);
-            return true;
+            Transform player = TargetAI.LookForPlayerArround(TargetAI.AttackRadius);
+            if(player !=null)
+            {
+                Player p = player.GetComponent<Player>();
+                if (p != null)
+                {
+                    canAttack = false;
+                    TargetAI.Atack(p);
+                    Invoke("resetCD", cD);
+                    return true;
+                }
+            }
+            return false;
         }
         else
             return false;
-        
     }
 
     void resetCD()

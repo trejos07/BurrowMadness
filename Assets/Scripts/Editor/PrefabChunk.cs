@@ -63,10 +63,9 @@ public class PrefabChunk : MonoBehaviour
         chunkSize = new Vector2Int(20, 20);
         width = chunkSize.x;
         heigth = chunkSize.y;
+        CheckBounds();
 
-        Vector3Int pos = Vector3Int.FloorToInt(tilemaps[0].transform.position) - new Vector3Int(width / 2, heigth / 2, 0);
-        myBounds = new BoundsInt(pos, new Vector3Int(width, heigth, 1));
-       
+
         updateLayers();
        
     }
@@ -78,6 +77,12 @@ public class PrefabChunk : MonoBehaviour
         {
             tilemaps[i].RefreshAllTiles();
         }
+    }
+
+    public void CheckBounds()
+    {
+        Vector3Int pos = Vector3Int.FloorToInt(tilemaps[0].transform.position) - new Vector3Int(width / 2, heigth / 2, 0);
+        myBounds = new BoundsInt(pos, new Vector3Int(width, heigth, 1));
     }
 
     public void updateLayers()
@@ -111,13 +116,15 @@ public class PrefabChunk : MonoBehaviour
 
     Tilemap setupTilemap()
     {
-        GameObject tm = new GameObject("Layer_"+tilemaps.Count);
+        GameObject tm = new GameObject("Layer_" + tilemaps.Count);
         Tilemap tilemap = tm.AddComponent<Tilemap>();
-        tm.AddComponent<TilemapRenderer>();
-        tm.AddComponent<TilemapCollider2D>();
-        tm.transform.position = transform.position;
+        Collider2D ctm = tm.AddComponent<TilemapCollider2D>();
+        ctm.usedByComposite = true;
+        Rigidbody2D rtm = tm.AddComponent<Rigidbody2D>();
+        rtm.position = transform.position;
+        rtm.bodyType = RigidbodyType2D.Static;
+        TilemapRenderer cctm = tm.AddComponent<TilemapRenderer>();
         tm.transform.SetParent(transform);
-
         return tilemap;
     }
 

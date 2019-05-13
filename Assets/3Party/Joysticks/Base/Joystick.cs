@@ -22,7 +22,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
     public delegate void JoysticInput(Vector2 inputVector);
     public event JoysticInput OnJoysticInput;
 
-    private void Update()
+    protected virtual void FixedUpdate()
     {
         if (OnJoysticInput != null)
             OnJoysticInput(inputVector);
@@ -40,23 +40,19 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerUpHandler, IPointer
             inputVector = value;
         }
     }
-
     public virtual void OnDrag(PointerEventData eventData)
     {
 
         
     }
-
     public virtual void OnPointerDown(PointerEventData eventData)
     {
         
     }
-
     public virtual void OnPointerUp(PointerEventData eventData)
     {
         
     }
-
     protected void ClampJoystick()
     {
         if (joystickMode == JoystickMode.Horizontal)

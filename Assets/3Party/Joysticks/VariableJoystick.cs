@@ -9,6 +9,25 @@ public class VariableJoystick : Joystick
 
     Vector2 joystickCenter = Vector2.zero;
 
+    private static VariableJoystick instance;
+
+    public static VariableJoystick Instance
+    {
+        get
+        {
+            return instance;
+        }
+
+        set
+        {
+            instance = value;
+        }
+    }
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
     void Start()
     {
         if (isFixed)
@@ -16,7 +35,6 @@ public class VariableJoystick : Joystick
         else
             OnFloat();
     }
-
     public void ChangeFixed(bool joystickFixed)
     {
         if (joystickFixed)
@@ -25,7 +43,6 @@ public class VariableJoystick : Joystick
             OnFloat();
         isFixed = joystickFixed;
     }
-
     public override void OnDrag(PointerEventData eventData)
     {
         Vector2 direction = eventData.position - joystickCenter;
@@ -34,7 +51,6 @@ public class VariableJoystick : Joystick
         handle.anchoredPosition = (InputVector * background.sizeDelta.x / 2f) * handleLimit;
         base.OnDrag(eventData);
     }
-
     public override void OnPointerDown(PointerEventData eventData)
     {
         if (!isFixed)
@@ -45,7 +61,6 @@ public class VariableJoystick : Joystick
             joystickCenter = eventData.position;
         }
     }
-
     public override void OnPointerUp(PointerEventData eventData)
     {
         if (!isFixed)
@@ -55,7 +70,6 @@ public class VariableJoystick : Joystick
         InputVector = Vector2.zero;
         handle.anchoredPosition = Vector2.zero;
     }
-
     void OnFixed()
     {
         joystickCenter = fixedScreenPosition;
@@ -63,7 +77,6 @@ public class VariableJoystick : Joystick
         handle.anchoredPosition = Vector2.zero;
         background.anchoredPosition = fixedScreenPosition;
     }
-
     void OnFloat()
     {
         handle.anchoredPosition = Vector2.zero;

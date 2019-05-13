@@ -32,6 +32,6 @@ public class WorldInfo
 
     public void Save()
     {
-        XMLManager.SaveData(this, XMLManager.WORLDINFO_FOLDER_NAME+ "GeneratedWorlds/" + name + ".xml");
+        XMLManager.SaveData(this, XMLManager.WORLDINFO_FOLDER_NAME+ "GeneratedWorlds/", name + ".xml");
     }
 }

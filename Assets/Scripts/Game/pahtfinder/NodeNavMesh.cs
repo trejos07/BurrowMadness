@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using System;
+using System.Linq;
 
 public class NodeNavMesh : MonoBehaviour
 {
@@ -65,8 +66,7 @@ public class NodeNavMesh : MonoBehaviour
     }
     public List<Node> GetNodesArraund(Node node, int radius)
     {
-        List<Node> nodes = new List<Node>();
-
+        HashSet<Node> nodes = new HashSet<Node>();
         if (node != null)
         {
             Vector2Int startPoint = node.GPos;
@@ -75,17 +75,14 @@ public class NodeNavMesh : MonoBehaviour
                 for (int j = startPoint.y - radius; j < startPoint.y + radius; j++)
                 {
                     //Debug.Log("se busca el nodo en el index " + i + " , " + j);
-                    if (i >= 0 && i < NodesArray.GetLength(0) && j >= 0 && j < NodesArray.GetLength(1))
+                    if (i >= 0 && i < width && j >= 0 && j < heigth)
                     {
                         if (NodesArray[i, j].BIsWall)
                             continue;
 
                         if (Math.Pow(i - startPoint.x, 2) + Math.Pow(j - startPoint.y, 2) < Math.Pow(radius, 2))
                         {
-                            if (!nodes.Contains(NodesArray[i, j]))
-                            {
                                 nodes.Add(NodesArray[i, j]);
-                            }
                         }
                     }
                 }
@@ -95,29 +92,7 @@ public class NodeNavMesh : MonoBehaviour
                 nodes.Remove(node);
         }
 
-        /*
-        if(!nodes.Contains(node))
-            nodes.Add(node);
-
-        foreach(Node n in GetNeighbNodes(node))
-        {
-            if (n.BIsWall)
-                continue;
-
-            if (!nodes.Contains(n))
-                nodes.Add(n);
-
-            if (Length>0)
-            {
-                foreach (Node gn in GetNodesArraund(n, Length - 1))
-                {
-                    if (!nodes.Contains(gn))
-                        nodes.Add(gn);
-                }
-            }
-        }
-        */
-        return nodes;
+        return nodes.ToList();
     }
     public Vector2Int GridposToIndex(Vector2Int gridPos)
     {
@@ -150,7 +125,8 @@ public class NodeNavMesh : MonoBehaviour
     {
         Node node = null;
         Vector2Int index = GridposToIndex((Vector2Int)worldTerrain.WorldToCell(a_vWorldPos));
-        node = NodesArray[index.x, index.y];
+        if (index.x >= 0 && index.x < width && index.y >= 0 && index.y < heigth)
+            node = NodesArray[index.x, index.y];
 
         return node;
     }

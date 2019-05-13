@@ -28,7 +28,7 @@ public class TutorialManager : MonoBehaviour
         else
             Destroy(gameObject);
 
-        if (GameManager.ins.Settings.tutorialOn)
+        if (GameManager.Instance.Settings.tutorialOn)
         {
             MainTutorial.ShowInstructions();
         }

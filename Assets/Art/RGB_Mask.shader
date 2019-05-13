@@ -2,9 +2,9 @@
 {
     Properties
     {
-        _Color1 ("Color", Color) = (1,1,1,1)
-        _Color2 ("Color", Color) = (1,1,1,1)
-        _Color3 ("Color", Color) = (1,1,1,1)
+        _Color1 ("Color1", Color) = (1,1,1,1)
+        _Color2 ("Color2", Color) = (1,1,1,1)
+        _Color3 ("Color3", Color) = (1,1,1,1)
         _MainTex ("Albedo (RGB)", 2D) = "white" {}
         _MaskTex ("Mask (RGB)", 2D) = "white" {}
         _Normal ("Normal", 2D) = "bump"{}
@@ -13,16 +13,17 @@
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "Queue" = "Transparent"
+		"IgnoreProjector" = "True"
+		"RenderType" = "TransparentCutout" }
         LOD 200
 
         CGPROGRAM
-        #pragma surface surf Standard fullforwardshadows
+        #pragma surface surf Standard fullforwardshadows alpha:fade
         #pragma target 3.0
 
         sampler2D _MainTex,_MaskTex,_Metallic,_Normal;
 		fixed3 _Color1, _Color2, _Color3;
-
 
         struct Input
         {
@@ -31,9 +32,6 @@
             float2 uv_Metallic;
             float2 uv_Normal;
         };
-
-        
-        
 
         UNITY_INSTANCING_BUFFER_START(Props)
         UNITY_INSTANCING_BUFFER_END(Props)
@@ -45,15 +43,15 @@
 			float cmask = min(1.0, mask.r+mask.g+mask.b);
 			float3 nro = tex2D(_Metallic, IN.uv_Metallic);
 			float4 n = tex2D(_Normal, IN.uv_Normal);
-
-			c.rgb = c.rgb*(1 - cmask) + (_Color1*mask.r) + (_Color2*mask.g) + (_Color3*mask.b);
+			
+			c.rgb = c.rgb*(1 - cmask) + c.rgb*(_Color1*mask.r) + c.rgb*(_Color2*mask.g) + c.rgb*(_Color3*mask.b);
 
             o.Albedo = c.rgb;
 			o.Normal = UnpackNormal(n);
-            //o.Metallic = nro.r;
-            //o.Smoothness = nro.g;
-			o.Occlusion = nro.b;
             o.Alpha = c.a;
+			//o.Metallic = nro.r;
+			//o.Smoothness = nro.g;
+			//o.Occlusion = nro.b;
         }
         ENDCG
     }

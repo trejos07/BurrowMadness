@@ -43,11 +43,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5df0e92ec410044a22de3472835b52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabToSpawn: {fileID: 4477412508332057552, guid: b653c70a2b683d14a87b33b247569a88,
-    type: 3}
-  spawnRatio: 5
+  EnemyID: 0
+  spawnRatio: 6.5
   maxVariationSRatio: 2
-  radiusSpawnArea: 30
+  radiusSpawnArea: 35
   maxPrefabsInArea: 4
   layerPrefab:
     serializedVersion: 2

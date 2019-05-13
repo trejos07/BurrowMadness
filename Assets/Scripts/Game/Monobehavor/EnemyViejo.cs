@@ -86,7 +86,7 @@ public class EnemyViejo : MonoBehaviour, IDamagable
 
         if (Player != null)
         {
-            StartCoroutine(agent.LookForPathTo(Player.position));
+            //StartCoroutine(agent.LookForPathTo(Player.position));
             path = agent.GetPathCornersInWorld();
         }
 
@@ -127,7 +127,7 @@ public class EnemyViejo : MonoBehaviour, IDamagable
     {
         if(!followingPath)
         {
-            StartCoroutine(agent.LookForPathTo(agent.GetRandomPointArround(transform.position,6)));
+            //StartCoroutine(agent.LookForPathTo(agent.GetRandomPointArround(transform.position,6)));
             path = agent.GetPathCornersInWorld();
             StopCoroutine(FollowPath());
             StartCoroutine(FollowPath());

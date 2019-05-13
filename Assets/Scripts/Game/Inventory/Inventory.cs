@@ -7,12 +7,11 @@ using System.Linq;
 
 public class Inventory : MonoBehaviour 
 {
-    GameObject SlotPrefab;
 
     //atributos 
     [SerializeField] Vector2 size= new Vector2(3,4);
-    [SerializeField] float spaceBtwn=1;
 
+    GameObject SlotPrefab;
     int ItemsCapacity;
     public int stackCapacity = 5;
 
@@ -43,7 +42,6 @@ public class Inventory : MonoBehaviour
         TurnSlots();
 
     }
-
     public int CountEmptySlots()
     {
         int empty = 0;
@@ -57,7 +55,6 @@ public class Inventory : MonoBehaviour
         }
         return empty;
     }
-
     public void GenerateSlots()
     {
         for (int i = 0; i < ItemsCapacity; i++)
@@ -68,7 +65,6 @@ public class Inventory : MonoBehaviour
         }
         //a
     }
-    
     public void TurnSlots()
     {
         for (int i = 0; i < slots.Count; i++)
@@ -76,14 +72,12 @@ public class Inventory : MonoBehaviour
             slots[i].TurnOff();
         }
     }
-
     public void SelectItem()
     {
         DisSelectSlot();
         TurnSlots();//muestro el inventario 
         StartCoroutine(SelectSlot());
     }
-
     public void DisSelectSlot()
     {
         currentSelectedSlot = null;
@@ -92,7 +86,6 @@ public class Inventory : MonoBehaviour
             slots[i].DisSelecSlot();
         }
     }
-
     public IEnumerator SelectSlot()
     {
         currentSelectedSlot = null;
@@ -131,13 +124,11 @@ public class Inventory : MonoBehaviour
             yield return null;
         }
     }
-
     public void CantStoreNotification(Item item)
     {
         MenuManager.Instance.DisplayMesagge("No se pudo almacenar el Item " + item.name + ". Ve a vender algunos de tus recursos", "Almacenamiento lleno");
 
     }
-
     public void AddValidation(Item itemToAdd)
     {
         bool canStore = false;
@@ -165,7 +156,6 @@ public class Inventory : MonoBehaviour
         }
 
     }
-
     public void RemoveSelectedItem(Item itemToRemove)
     {
         for (int i = 0; i < slots.Count; i++)
@@ -174,7 +164,6 @@ public class Inventory : MonoBehaviour
                 slots[i].CleraSlot();
         }
     }
-
     public void SaveInventory()
     {
         List<InvSlot> inventorty = new List<InvSlot>();
@@ -182,7 +171,7 @@ public class Inventory : MonoBehaviour
         {
             inventorty.Add(s.Slot);
         }
-        GameManager.ins.PlayerInfo.Inventorty = inventorty;
+        GameManager.Instance.PlayerInfo.Inventorty = inventorty;
     }
 
 }

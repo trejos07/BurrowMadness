@@ -12,7 +12,7 @@ public class MapCreatorManager : MonoBehaviour
     private void Awake()
     {
         sprites = Resources.LoadAll<Sprite>("Sprites/MapIcons");
-        SetIcons(GameManager.ins.Worlds);
+        SetIcons(GameManager.Instance.Worlds);
         DrawIcons();
         transform.localScale = Vector3.one * 0.3f;
     }
@@ -32,7 +32,7 @@ public class MapCreatorManager : MonoBehaviour
         //ClearIcons();
         for (int i = 0; i < icons.Count; i++)
         {
-            WorldInfo info = GameManager.ins.GetWorldInfo(icons[i].worldName);
+            WorldInfo info = GameManager.Instance.GetWorldInfo(icons[i].worldName);
             
             GameObject iconGO = new GameObject(info.name + "_Icon");
 
@@ -43,8 +43,9 @@ public class MapCreatorManager : MonoBehaviour
             img.color = info.color;
             RectTransform rt = (RectTransform)iconGO.transform;
             rt.anchoredPosition = icons[i].mapPos;
+            rt.localScale = Vector3.one * Random.Range(3,6);
             
-            iconGO.AddComponent<Button>().onClick.AddListener(()=>GameManager.ins.SelectedWorld =info);
+            iconGO.AddComponent<Button>().onClick.AddListener(()=>GameManager.Instance.SelectedWorld =info);
         }
     }
 

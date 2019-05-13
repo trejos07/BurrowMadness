@@ -93,7 +93,6 @@ public class Mision
                 subMisionInfo subMision = info.SubMisions[i];
                 subMisions.Add(new SubMision(subMision)); 
             }
-            Debug.Log("se creo una mision con " + subMisions.Count + " submisiones");
 
         }
 

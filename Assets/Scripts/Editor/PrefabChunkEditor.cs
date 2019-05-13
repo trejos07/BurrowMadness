@@ -13,10 +13,14 @@ public class PrefabChunkEditor : Editor
 
         PrefabChunk chunk = (PrefabChunk)target;
 
+        if (GUILayout.Button("Update Bounds"))
+        {
+            chunk.CheckBounds();
+        }
         if (GUILayout.Button("Save Chunk"))
         {
             chunk.GetTileInfo();
-            XMLManager.SaveData(chunk.ChunkInfo,XMLManager.CHUNKINFO_FOLDER_NAME+chunk.name+".xml");
+            XMLManager.SaveData(chunk.ChunkInfo,XMLManager.CHUNKINFO_FOLDER_NAME,chunk.name+".xml");
             EditorUtility.DisplayDialog("Guadado de Chunk", "se guardo el Chunk " + chunk.name,"Ok","");
 
         }
@@ -24,7 +28,7 @@ public class PrefabChunkEditor : Editor
         if (GUILayout.Button("Load Chunk"))
         {
             TerrainTile.tileList = new List<TerrainTile>(Resources.LoadAll<TerrainTile>("Tiles"));
-            string path = EditorUtility.OpenFilePanel("Select Chunk Data", Application.dataPath + "/Resources/XML/ChunkInfo","XML");
+            string path = EditorUtility.OpenFilePanel("Select Chunk Data", Application.dataPath + "/StreamingAssets/XML/ChunkInfo", "XML");
             path = path.Replace(Application.dataPath + "/Resources/", "");
             path = path.Replace(".xml", "");
             chunk.LoadWorldInfo(XMLManager.LoadData<ChunkInfo>(path));

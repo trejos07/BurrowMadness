@@ -6,10 +6,10 @@ using TMPro;
 
 public class MisionSelectionMenu : MonoBehaviour
 {
-
     public static MisionSelectionMenu Instance;
 
     [SerializeField] GameObject misionsViewPort;
+    [SerializeField] Sprite recolectionMisionIcon;
     GameObject worldsMisionsPanel;
     GameObject misionSlot;
     GameObject subMisionSlot;
@@ -27,7 +27,6 @@ public class MisionSelectionMenu : MonoBehaviour
             return selectedSlot.Info;
         }
     }
-
     public MisionSlot SelectedSlot
     {
         get
@@ -83,7 +82,7 @@ public class MisionSelectionMenu : MonoBehaviour
         foreach (List<MisionInfo> lm in MisionManager.Instance.MisionsPerWorld)
         {
             int i = MisionManager.Instance.MisionsPerWorld.IndexOf(lm);
-            WorldInfo world = GameManager.ins.Worlds[i];
+            WorldInfo world = GameManager.Instance.Worlds[i];
             GameObject wMisionPanel= Instantiate(worldsMisionsPanel, misionsViewPort.transform);
             wMisionPanel.transform.Find("Mision_Name_Text").GetComponent<TextMeshProUGUI>().text = world.name+" Misions";
             wMisionPanel.transform.Find("World_Image").GetComponent<Image>();//Por implentar
@@ -93,6 +92,7 @@ public class MisionSelectionMenu : MonoBehaviour
             {
                 GameObject ms = Instantiate(misionSlot, misionsPanel);
                 MisionSlot slot = MisionSlot.CreateComponent(ms, m);
+                slot.MisionIcon.sprite = recolectionMisionIcon;
                 slot.Button.onClick.AddListener(()=> {
                     SelectedSlot = slot;
                     if(OnMisionSelected!= null)
@@ -137,7 +137,7 @@ public class MisionSelectionMenu : MonoBehaviour
     }
     public void ActiveMision()
     {
-        GameManager.ins.ActiveMision = SelectedMision;
+        GameManager.Instance.ActiveMision = SelectedMision;
         if (OnMisionActive != null)
             OnMisionActive(SelectedSlot);
     }

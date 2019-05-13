@@ -53,7 +53,8 @@ public class SoundManager : MonoBehaviour {
             return;
 
         }
-        s.source.Play();
+        if(!s.source.isPlaying)
+            s.source.Play();
     }
 
     public void Stop(string name)
@@ -75,5 +76,35 @@ public class SoundManager : MonoBehaviour {
         return s;
     }
 
+    public bool CheckPlaying(string name)
+    {
+        Sound s = GetSound(name);
+        if (s != null)
+        {
+            if (s.source.isPlaying)
+            {
+                return s.source.isPlaying;
+            }
+            else
+                return false;
+        }
+        else
+        {
+            Debug.Log("El Sonido"+ name  + "  No Existe" );
+            return false;
+        }
+    }
+    public void SetVolumen(string name, float v)
+    {
+        Sound s = GetSound(name);
+        s.source.volume = v;
+        s.volumen = v;
+    }
+    public void SetPitch(string name, float p)
+    {
+        Sound s = GetSound(name);
+        s.source.pitch = p;
+        s.pitch = p;
+    }
 
 }

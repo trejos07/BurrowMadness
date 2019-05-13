@@ -6,22 +6,34 @@ public class PatrolBT: RunBT
 
     public override void Execute()
     {
-        Transform Player = Owner.LookForPlayerArround();
+        Transform Player = Owner.LookForPlayerArround(50);
         if (Player != null)
         {
-            NextState = transform.GetComponent<AgroBT>();
-            SwitchToNextState();
-        }
-        else
-        {
+            Player = Owner.LookForPlayerArround(Owner.DetectRadius);
+
+            if (Player != null)
+            {
+                NextState = Owner.GetState("AgroBT");
+                SwitchToNextState();
+                return;
+            }
+
             float randomToIdle = Random.Range(0f, 1f);
 
             if (IldeChance <= randomToIdle) base.Execute();
             else
             {
-                NextState = transform.GetComponent<Idle>();
+                NextState = Owner.GetState("Idle");
                 SwitchToNextState();
+                return;
             }
+            
+        }
+        else
+        {
+            NextState = Owner.GetState("Inactive");
+            SwitchToNextState();
+            return;
         }
     }
 

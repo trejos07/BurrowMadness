@@ -30,11 +30,10 @@ public class MisionMenu : MonoBehaviour
         SelectedMision = LoadMision();
         foreach (SubMision sub in SelectedMision.SubMisions)
         {
-            Debug.Log(sub.Amount);
+
             GameObject _slot = Instantiate(SlotPrefab, Vector3.zero, Quaternion.identity, transform);
             SubMisionSlot slot = SubMisionSlot.CreateComponent(_slot, sub);
             slots.Add(slot);
-            Debug.Log(sub.Item.itemName);
         }
         TurnOff();
         Mision.OnMisionCompleted += OnMisionComplete;
@@ -43,23 +42,23 @@ public class MisionMenu : MonoBehaviour
 
     public Mision LoadMision()
     {
-        if(GameManager.ins.ActiveMision!=null)
+        if(GameManager.Instance.ActiveMision!=null)
         {
-            MisionInfo actvMsn=GameManager.ins.ActiveMision;
-            if(GameManager.ins.SelectedWorld == GameManager.ins.GetWorldInfo(actvMsn.wname))
+            MisionInfo actvMsn=GameManager.Instance.ActiveMision;
+            if(GameManager.Instance.SelectedWorld == GameManager.Instance.GetWorldInfo(actvMsn.wname))
                 return new Mision(actvMsn);
             else
             {
-                WorldInfo actvWorld = GameManager.ins.SelectedWorld;
-                GameManager.ins.ActiveMision = MisionManager.Instance.GetMisionFromWorld(actvWorld);
-                return new Mision(GameManager.ins.ActiveMision);
+                WorldInfo actvWorld = GameManager.Instance.SelectedWorld;
+                GameManager.Instance.ActiveMision = MisionManager.Instance.GetMisionFromWorld(actvWorld);
+                return new Mision(GameManager.Instance.ActiveMision);
             }
         }
         else
         {
-            WorldInfo actvWorld = GameManager.ins.SelectedWorld;
-            GameManager.ins.ActiveMision = MisionManager.Instance.GetMisionFromWorld(actvWorld);
-            return new Mision(GameManager.ins.ActiveMision);
+            WorldInfo actvWorld = GameManager.Instance.SelectedWorld;
+            GameManager.Instance.ActiveMision = MisionManager.Instance.GetMisionFromWorld(actvWorld);
+            return new Mision(GameManager.Instance.ActiveMision);
         }
 
     }

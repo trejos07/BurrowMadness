@@ -33,7 +33,6 @@ public class Item : ScriptableObject
         }
 
     }
-
     public int Id
     {
         get
@@ -42,6 +41,7 @@ public class Item : ScriptableObject
         }
         
     }
+
 
     public static Item ChanceRandomItem()
     {
@@ -83,7 +83,6 @@ public class Item : ScriptableObject
         return item;
 
     }
-
     public static int[] IdsFormItems(Item[] items)
     {
         int[] ids = new int[items.Length];
@@ -93,7 +92,6 @@ public class Item : ScriptableObject
         }
         return ids;
     }
-
     public static Item[] ItemsFromIds(int[] items)
     {
         Item[] ids = new Item[items.Length];
@@ -115,7 +113,6 @@ public class Item : ScriptableObject
     {
         itemsList.Remove(this);
     }
-
     public static Item GetItemOfID(int id)
     {
         Item item = null;
@@ -128,7 +125,6 @@ public class Item : ScriptableObject
         }
         return item;
     }
-
     public void Piked()
     {
         if (OnItemPickedUp != null)

@@ -3,43 +3,97 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq; 
 
-public class BulletPool
+public class BulletPool: MonoBehaviour
 {
-    GameObject Bala;
-    int NumeroBalas;
+    [SerializeField] private Bullet m_bullet;
+    [SerializeField] int size;
 
-    int BalaActual;
-    Bullet[] Balas;
+    private int active;
+    private Queue<Bullet> objs = new Queue<Bullet>();
+    private Queue<Bullet> returnigObj = new Queue<Bullet>();
+    private Vector3 defPos = Vector2.one * 5000;
 
-    public BulletPool(GameObject bala, int numeroBalas)
+    public static BulletPool CreatePool(GameObject where, Bullet bullet, int size)
     {
-        Bala = bala;
-        NumeroBalas = numeroBalas;
-        CrearBalas();
+        where.SetActive(false);
+        where.name = "BulletPool_" + bullet.Name;
+        BulletPool myC = where.AddComponent<BulletPool>();
+        myC.m_bullet = bullet;
+        myC.size = size;
+        where.SetActive(true);
+        return myC;
     }
 
-    public void CrearBalas()
+    private void Awake()
     {
-        Balas = new Bullet[NumeroBalas];
-        for (int i = 0; i < NumeroBalas; i++)
+        Bullet.OnInactive += ReturnToPool;
+        for (int i = 0; i < size; i++)
         {
-            GameObject InstanciaBala = GameObject.Instantiate(Bala, Vector3.one*500, Quaternion.identity);
-            Balas[i] = InstanciaBala.GetComponent<Bullet>();
+            objs.Enqueue(RequireT());
         }
     }
-
-    public Bullet GetNextBullet()
+    private void FixedUpdate()
     {
-        try
+        Movebodies();
+    }
+    void Movebodies()
+    {
+        while (returnigObj.Count > 0)
         {
-            return Balas.First(b => b.IsFlying == false);
-        }
-        catch
-        {
-            Debug.LogWarning("Se Acabaron las Balas, Espera que se Recargen");
-            return null;
+            Bullet bullet = returnigObj.Dequeue();
+            objs.Enqueue(bullet);
+            bullet.Rigidbody.position = (defPos);
+            //bullet.Rigidbody.Sleep();
+            //bullet.Rigidbody.simulated = false;
+            bullet.Collider.enabled = false;
         }
     }
+    public Bullet GetAt(Vector3 pos, float rot)
+    {
+        if (objs.Count > 0)
+        {
+            Bullet obj = objs.Dequeue();
+            active++;
+            obj.Rigidbody.simulated = true;
+            obj.Rigidbody.WakeUp();
+            obj.Collider.enabled = true;
+            obj.Trail.Clear();
+            obj.Rigidbody.position = pos;
+            obj.Rigidbody.rotation=(rot);
+            obj.Trail.Clear();
+            return obj;
+        }
+        else
+        {
+            Bullet obj = RequireT();
+            active++;
+            obj.Rigidbody.simulated = true;
+            obj.Rigidbody.WakeUp();
+            obj.Collider.enabled = true;
+            obj.Trail.Clear();
+            obj.Rigidbody.position = pos;
+            obj.Rigidbody.rotation = (rot);
+            obj.Trail.Clear();
+            obj.GetComponent<TrailRenderer>().Clear();
+            return obj;
+        }
 
 
+    }
+    public void ReturnToPool(Bullet bullet)
+    {
+        if(bullet.name == m_bullet.name)
+        {
+            returnigObj.Enqueue(bullet);
+            active--;
+        }
+    }
+    public virtual Bullet RequireT()
+    {
+        Bullet b = Instantiate<Bullet>(m_bullet, defPos, transform.rotation, transform);
+        b.Rigidbody.simulated = false;
+        b.Collider.enabled = false;
+        return b;
+    }
+   
 }

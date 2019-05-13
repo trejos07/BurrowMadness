@@ -10,18 +10,32 @@ public class MoveToDistance : Task
 
     public override bool Execute()
     {
-        Transform player = TargetAI.LookForPlayerArround(); 
-        float d = Vector3.Distance(TargetAI.transform.position, player.position);
-        if (d<=stopDistance)
+        Transform player = TargetAI.LookForPlayerArround(TargetAI.DetectRadius); 
+        if(player != null)
         {
-            agent.IsStopped = true;
-            return false;
+            float d = Vector3.Distance(TargetAI.transform.position, player.position);
+            if (d <= stopDistance)
+            {
+                agent.IsStopped = true;
+                return false;
+            }
+            if (d <= stopDistance)
+            {
+                agent.IsStopped = true;
+                return false;
+            }
+            else
+            {
+                if (agent.IsStopped)
+                {
+                    agent.StopDistance = stopDistance;
+                    agent.IsStopped = false;
+                    agent.SetDestination(player.position);
+                }
+
+                return true;
+            }
         }
-        else
-        {
-            agent.IsStopped = false;
-            agent.SetDestination(player.position);
-            return true;
-        }
+        return false;
     }
 }

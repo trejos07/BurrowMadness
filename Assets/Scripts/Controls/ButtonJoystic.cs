@@ -11,12 +11,34 @@ public class ButtonJoystic: Joystick
     [Range(0,100)]
     public float buttonUnbral=20;
 
+    private static ButtonJoystic instance;
+
     Vector2 joystickCenter = Vector2.zero;
+    bool release;
+
+    public static ButtonJoystic Instance
+    {
+        get
+        {
+            return instance;
+        }
+
+        set
+        {
+            instance = value;
+        }
+    }
 
     public delegate void JoysticButtonPressed();
     public event JoysticButtonPressed OnJoysticButtonRelease;
 
-
+    private void Awake()
+    {
+        if (Instance==null)
+        {
+            Instance = this;
+        }
+    }
     void Start()
     {
         if (isFixed)
@@ -24,7 +46,6 @@ public class ButtonJoystic: Joystick
         else
             OnFloat();
     }
-
     public void ChangeFixed(bool joystickFixed)
     {
         if (joystickFixed)
@@ -33,7 +54,17 @@ public class ButtonJoystic: Joystick
             OnFloat();
         isFixed = joystickFixed;
     }
+    protected override void FixedUpdate()
+    {
+        base.FixedUpdate();
+        if(release)
+        {
+            release = false;
+            if (OnJoysticButtonRelease != null)
+                OnJoysticButtonRelease();
 
+        }
+    }
     public override void OnDrag(PointerEventData eventData)
     {
         
@@ -45,7 +76,6 @@ public class ButtonJoystic: Joystick
         //base.OnDrag(eventData);
 
     }
-
     public override void OnPointerDown(PointerEventData eventData)
     {
         if (!isFixed)
@@ -56,20 +86,16 @@ public class ButtonJoystic: Joystick
             joystickCenter = eventData.position;
         }
     }
-
     public override void OnPointerUp(PointerEventData eventData)
     {
         if (!isFixed)
         {
             background.gameObject.SetActive(false);
         }
-        if (OnJoysticButtonRelease != null)
-            OnJoysticButtonRelease();
-       
+        release = true;
         InputVector = Vector2.zero;
         handle.anchoredPosition = Vector2.zero;
     }
-
     void OnFixed()
     {
         joystickCenter = fixedScreenPosition;
@@ -77,7 +103,6 @@ public class ButtonJoystic: Joystick
         handle.anchoredPosition = Vector2.zero;
         background.anchoredPosition = fixedScreenPosition;
     }
-
     void OnFloat()
     {
         handle.anchoredPosition = Vector2.zero;

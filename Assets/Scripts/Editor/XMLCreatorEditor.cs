@@ -14,7 +14,7 @@ public class XMLCreatorEditor : Editor
 
         if (GUILayout.Button("Save Info"))
         {
-            XMLManager.SaveData(creator.WorldNames, XMLManager.WORLDINFO_FOLDER_NAME + "WorldNames" + ".xml");
+            XMLManager.SaveData(creator.WorldNames, XMLManager.WORLDINFO_FOLDER_NAME, "WorldNames" + ".xml");
             EditorUtility.DisplayDialog("Guadado de Datos", "se guardo correctamente la informacion ", "Ok", "");
 
         }

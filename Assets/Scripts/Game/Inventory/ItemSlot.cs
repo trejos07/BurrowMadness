@@ -7,7 +7,6 @@ using System.Xml;
 
 public class ItemSlot : MonoBehaviour
 {
-
     //GUI
     Image itemImage;
     TextMeshProUGUI itemCountText;
@@ -17,7 +16,6 @@ public class ItemSlot : MonoBehaviour
     InvSlot slot;
 
     public static int StackCapacity;
-
     public Item ItemStored
     {
         get
@@ -32,7 +30,6 @@ public class ItemSlot : MonoBehaviour
             return slot.itemCount;
         }
     }
-
     public InvSlot Slot
     {
         get
@@ -53,7 +50,6 @@ public class ItemSlot : MonoBehaviour
         itemCountText = transform.Find("ItemCount").GetComponent<TextMeshProUGUI>();
         SelectedImage = transform.Find("SelectedImage").GetComponent<Image>();
     }
-
     public void AddToSlot( Item item, out bool succes)
     {
         succes = false;
@@ -74,13 +70,11 @@ public class ItemSlot : MonoBehaviour
             }
         }
     }
-
     public void CleraSlot()
     {
         slot.itemCount = 0;
         itemImage.sprite = null;
     }
-
     public void UpdateGui()
     {
         itemCountText.text = ItemCount.ToString();
@@ -88,18 +82,15 @@ public class ItemSlot : MonoBehaviour
         itemImage.color = ItemStored.color;
         itemImage.enabled = itemImage.sprite!=null;
     }
-
     public ItemSlot SelecSlot()
     {
         SelectedImage.enabled = true;
         return this;
     }
-
     public void DisSelecSlot()
     {
         SelectedImage.enabled = false;
     }
-
     public void TurnOff()
     {
         gameObject.SetActive(! gameObject.activeSelf);

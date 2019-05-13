@@ -5,15 +5,33 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager ins;
+    Player playerIns;
+
+    [SerializeField] Camera guiCamera;
+
+    private static GameManager instance;
     public GameSettings settings;
     private PlayerInfo playerInfo;
     private WorldInfo selectedWorld;
     private MisionInfo activeMision;
     private List<WorldInfo> worlds;
     WorldInfo tutuorial;
+    private bool onGamplay;
+
 
     #region Accesores
+    public static GameManager Instance
+    {
+        get
+        {
+            return instance;
+        }
+
+        set
+        {
+            instance = value;
+        }
+    }
     public WorldInfo SelectedWorld
     {
         get
@@ -28,7 +46,6 @@ public class GameManager : MonoBehaviour
                 OnSelecWorld(value);
         }
     }
-
     public PlayerInfo PlayerInfo
     {
         get
@@ -41,7 +58,6 @@ public class GameManager : MonoBehaviour
             playerInfo = value;
         }
     }
-
     public List<WorldInfo> Worlds
     {
         get
@@ -49,7 +65,6 @@ public class GameManager : MonoBehaviour
             return worlds;
         }
     }
-
     public GameSettings Settings
     {
         get
@@ -57,7 +72,6 @@ public class GameManager : MonoBehaviour
             return settings;
         }
     }
-
     public MisionInfo ActiveMision
     {
         get
@@ -70,23 +84,45 @@ public class GameManager : MonoBehaviour
             activeMision = value;
         }
     }
+    public bool OnGamplay
+    {
+        get
+        {
+            return onGamplay;
+        }
+
+        set
+        {
+            onGamplay = value;
+        }
+    }
     #endregion
 
+    public delegate void Action(); 
+    public event Action OnLevelLoaded;
     public delegate void WorldAction(WorldInfo world);
     public event WorldAction OnSelecWorld;
 
     private void Awake()
     {
-        if (ins == null)
+        if (Instance == null)
         {
-            ins = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
             Destroy(this);
 
+        SceneManager.sceneLoaded += OnSceneLoaded;
         Item.ItemsList = new List<Item>(Resources.LoadAll<Item>("Items"));
         TerrainTile.tileList = new List<TerrainTile>(Resources.LoadAll<TerrainTile>("Tiles"));
+        
+
+       
+
+    }
+    private void Start()
+    {
         worlds = new List<WorldInfo>();
 
         if (settings.tutorialOn)
@@ -98,7 +134,27 @@ public class GameManager : MonoBehaviour
         }
         else
             worlds = GetWorlds();
+    }
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.buildIndex == 0)
+        {
 
+        }
+        else if (scene.buildIndex == 1)
+        {
+            OnGamplay = true;
+            if (OnLevelLoaded != null)
+            {
+                OnLevelLoaded();
+            }
+        }
+
+    }
+    
+    void OnStartGamplay()
+    {
+        
     }
     void EndTutorial()
     {
@@ -145,7 +201,7 @@ public class GameManager : MonoBehaviour
         Debug.Log("generando un mundo...");
         List<string> names = XMLManager.LoadData<List<string>>(XMLManager.WORLDINFO_FOLDER_NAME+"WorldNames");
 
-        string name = names[Random.Range(0, names.Count)];
+        string name = names[UnityEngine.Random.Range(0, names.Count)];
         int d = (int)dificulty;
         int nDoungeons=0;
         for (int i = 0; i < d*2; i++)
@@ -159,7 +215,7 @@ public class GameManager : MonoBehaviour
 
         Vector2Int worldSizeInChunks = new Vector2Int(Random.Range(d, d + 3)+1, Random.Range(d, d + 3)+1);
         ChunkInfo[][] chunks = null;
-        Color color = Color.HSVToRGB(Random.Range(0f,1f), Random.Range(0.35f, 0.6f), Random.Range(0.5f, 0.75f));
+        Color color = Color.HSVToRGB(Random.Range(0f,1f), Random.Range(0.6f,1f), Random.Range(0.5f, 0.75f));
         List<Item> worldSources = new List<Item>();
 
         while(nResources>0)
@@ -177,10 +233,10 @@ public class GameManager : MonoBehaviour
     }
     public void LoaadLevel(WorldInfo info)
     {
-        SelectedWorld = info;
+        SelectedWorld = info; 
         SceneManager.LoadScene(1);
         MenuManager.Instance.TurnOffAllMenus();
-
+        guiCamera.gameObject.SetActive(false);
     }
     public void LoadLobby()
     {
@@ -188,6 +244,8 @@ public class GameManager : MonoBehaviour
         SelectedWorld.Save();
         SelectedWorld = null;
         SceneManager.LoadScene(0);
+        guiCamera.gameObject.SetActive(false);
+        guiCamera.gameObject.SetActive(true);
         MenuManager.Instance.OpenMenu("Main_Menu");
         MenuManager.Instance.OpenMenu("Lobby_Menu");
     }
@@ -213,12 +271,25 @@ public class GameManager : MonoBehaviour
     public void SetGoldRedward(int redward)
     {
         playerInfo.Gold += redward;
+        PlayerInfo.Save();
     }
     public void SetGemsRedward(int redward)
     {
         playerInfo.Gems += redward;
     }
+    public bool ChargeGoldPurchase(int amout)
+    {
+        if (playerInfo.Gold - amout >= 0)
+        {
+            playerInfo.Gold -= amout;
+            PlayerInfo.Save();
+            return true;
+        }
+        return false;
+        
+    }
+
 
 }
 
-public enum WorldDificulty { easy = 1, medium=2, hard=3 }
+public enum WorldDificulty { easy = 1, medium, hard }

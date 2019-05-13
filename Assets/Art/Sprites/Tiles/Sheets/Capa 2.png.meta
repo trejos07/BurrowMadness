@@ -166,11 +166,32 @@ TextureImporter:
     21300322: Capa 2_161
     21300324: Capa 2_162
     21300326: Capa 2_163
+    21300328: Capa 2_164
+    21300330: Capa 2_165
+    21300332: Capa 2_166
+    21300334: Capa 2_167
+    21300336: Capa 2_172
+    21300338: Capa 2_173
+    21300340: Capa 2_174
+    21300342: Capa 2_175
+    21300344: Capa 2_176
+    21300346: Capa 2_177
+    21300348: Capa 2_185
+    21300350: Capa 2_186
+    21300352: Capa 2_190
+    21300354: Capa 2_191
+    21300356: Capa 2_192
+    21300358: Capa 2_193
+    21300360: Capa 2_194
+    21300362: Capa 2_195
+    21300364: Capa 2_196
+    21300366: Capa 2_197
+    21300368: Capa 2_198
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 0
+    enableMipMap: 1
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -184,7 +205,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -267,13 +288,13 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d370de76005764a40b9e7609af8a766b
+      spriteID: 89fc12cc2ad4a34448a1e332ab4b6f8a
       vertices: []
       indices: 
       edges: []
@@ -287,13 +308,13 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fcbe2e408a6380449b591bbc7d6f1af8
+      spriteID: d97bd7a8d0e935f4eb326030f78128e2
       vertices: []
       indices: 
       edges: []
@@ -307,33 +328,13 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ce9f6c7a2ce06f499daf00c0107266e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 2432
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c3d66592c8977e4e84e9354efbf59e4
+      spriteID: 791abb63346232049a6f219e3989a95e
       vertices: []
       indices: 
       edges: []
@@ -347,13 +348,13 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e9ce26639f239841a74919c8f40199d
+      spriteID: 89c93d43374fd964b98360ae8474fda5
       vertices: []
       indices: 
       edges: []
@@ -367,53 +368,13 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a67f7d7036ddece45861cabbd67c7f7a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_8
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 2304
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d58d2079f4278da4388f711c1fe5689c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_9
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 2304
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ce1496bfa785be04ab3909a9df357e12
+      spriteID: f6c4918e16fd04e498ce6ad658fe0cfa
       vertices: []
       indices: 
       edges: []
@@ -422,18 +383,18 @@ TextureImporter:
       name: Capa 2_10
       rect:
         serializedVersion: 2
-        x: 256
+        x: 0
         y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 77e3eb4c7fc40d245bbca233a50c9a9e
+      spriteID: 700ecf0c944a10c4db014e1ce3a14199
       vertices: []
       indices: 
       edges: []
@@ -442,18 +403,18 @@ TextureImporter:
       name: Capa 2_11
       rect:
         serializedVersion: 2
-        x: 384
+        x: 128
         y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6778b3df7ed826c4eb1ce61c154fe64f
+      spriteID: 7cf2a0a367c3506429309e56e1fe559b
       vertices: []
       indices: 
       edges: []
@@ -462,18 +423,18 @@ TextureImporter:
       name: Capa 2_12
       rect:
         serializedVersion: 2
-        x: 512
+        x: 256
         y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dbc8aec5d9a5ec40a1762167e68b31e
+      spriteID: 88683169c0ca411458f002e830a4dff8
       vertices: []
       indices: 
       edges: []
@@ -482,18 +443,18 @@ TextureImporter:
       name: Capa 2_13
       rect:
         serializedVersion: 2
-        x: 640
+        x: 384
         y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 365e6568333e0bd429bab78f099ddabf
+      spriteID: 1baa830ff17d9d143abbe08eba9fd02a
       vertices: []
       indices: 
       edges: []
@@ -502,18 +463,18 @@ TextureImporter:
       name: Capa 2_14
       rect:
         serializedVersion: 2
-        x: 768
+        x: 512
         y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: faf3a61bc16fbe644af627c4652310bb
+      spriteID: f746ff2e0de95de4d829a8de87302abb
       vertices: []
       indices: 
       edges: []
@@ -522,38 +483,18 @@ TextureImporter:
       name: Capa 2_15
       rect:
         serializedVersion: 2
-        x: 896
+        x: 640
         y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd59bb7b58651744186017d860d3dd76
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_16
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 2304
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67575e842a85d844ea000eb17ecc4471
+      spriteID: a0cb5f13efa87b749be2a4832540347a
       vertices: []
       indices: 
       edges: []
@@ -562,18 +503,18 @@ TextureImporter:
       name: Capa 2_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 2176
+        x: 896
+        y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec19f391fafabdb47afddc38cc038a77
+      spriteID: da992b4fc8f11b347bc2a68f06bd6432
       vertices: []
       indices: 
       edges: []
@@ -582,38 +523,38 @@ TextureImporter:
       name: Capa 2_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 2176
+        x: 1024
+        y: 2304
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc32a36c30241df499aa71258ccf1762
+      spriteID: 01cc9353122b09442a3c1647b6d2fe24
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_19
+      name: Capa 2_20
       rect:
         serializedVersion: 2
-        x: 256
+        x: 0
         y: 2176
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4435b056757d53844b9b37a53980313a
+      spriteID: cba7241b1285fde4f90500991e172bec
       vertices: []
       indices: 
       edges: []
@@ -622,24 +563,64 @@ TextureImporter:
       name: Capa 2_21
       rect:
         serializedVersion: 2
-        x: 512
+        x: 128
         y: 2176
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d46858efb8a6b3a42a1c2a0c17417fd9
+      spriteID: aa2ddc9eed8e15b4aaa31d57671b3168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_23
+      name: Capa 2_22
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 2176
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73f14580dd497764c8d1ebf151247642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_24
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 2176
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b4f199031c3bc44acaac44e696cbdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_26
       rect:
         serializedVersion: 2
         x: 768
@@ -647,19 +628,19 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a87105b802c0a3d439c399166a1266e8
+      spriteID: 8b7ce6d73a1d30f46b4ffda2a37858a3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_28
+      name: Capa 2_32
       rect:
         serializedVersion: 2
         x: 256
@@ -667,33 +648,13 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a0cca0d05c87ed45abd97d16418002f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_29
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 2048
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 86b46b5d903f8534691f4e24bf46b8a8
+      spriteID: b257c971bedf83248bc13d090688f018
       vertices: []
       indices: 
       edges: []
@@ -702,78 +663,18 @@ TextureImporter:
       name: Capa 2_33
       rect:
         serializedVersion: 2
-        x: 896
+        x: 384
         y: 2048
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0a20b6611976c04089dee0c9d1d88b0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_34
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 2048
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee5efc2f87c6daa429357dbf714d9b4a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_35
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1920
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 963d6e6f23dece241a4484ba42357ae1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_36
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1920
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2c0c3a703e659174ea499da5be1dade4
+      spriteID: 8871ee08bccdf15429e101e6b952f972
       vertices: []
       indices: 
       edges: []
@@ -782,18 +683,18 @@ TextureImporter:
       name: Capa 2_37
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1920
+        x: 896
+        y: 2048
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74edf305acb8b074cb976c5c35c9b223
+      spriteID: 262eac5710b5fc140b0953300544874c
       vertices: []
       indices: 
       edges: []
@@ -802,18 +703,38 @@ TextureImporter:
       name: Capa 2_38
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1920
+        x: 1024
+        y: 2048
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 491e3fb35957d29499d91bed1d5b58aa
+      spriteID: aba41700b0d3e2e408d1997b27e3a75c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1920
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d61c416e2a36394ba732f970a1fcabd
       vertices: []
       indices: 
       edges: []
@@ -822,18 +743,18 @@ TextureImporter:
       name: Capa 2_41
       rect:
         serializedVersion: 2
-        x: 896
+        x: 128
         y: 1920
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b73ba77ac30e0fb489fd7c02cc4c3ed8
+      spriteID: f5da11ec6ea1f1949aca4d4b26ae859d
       vertices: []
       indices: 
       edges: []
@@ -842,18 +763,18 @@ TextureImporter:
       name: Capa 2_42
       rect:
         serializedVersion: 2
-        x: 1024
+        x: 256
         y: 1920
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8af8054784b81bf46895faaf7a9d1d82
+      spriteID: 1bafac4e5de26ff4487a1cf8e6860ebe
       vertices: []
       indices: 
       edges: []
@@ -862,38 +783,38 @@ TextureImporter:
       name: Capa 2_43
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1792
+        x: 384
+        y: 1920
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c434be26e9c0f424d9eec5c0d91e4c45
+      spriteID: e1d41bcb587dc0c459eb7094dab1a4f4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_44
+      name: Capa 2_47
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1792
+        x: 896
+        y: 1920
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5883d02d3daa8ef4d913f7f0de61cd85
+      spriteID: 95344c82ba43f194c835c13b6d1825c7
       vertices: []
       indices: 
       edges: []
@@ -902,58 +823,58 @@ TextureImporter:
       name: Capa 2_48
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1792
+        x: 1024
+        y: 1920
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb5f9bed81ebce9449c148134e912b9d
+      spriteID: b1c380376adade9478cda1cee4718b91
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_49
+      name: Capa 2_50
       rect:
         serializedVersion: 2
-        x: 768
+        x: 0
         y: 1792
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22aa805d24c645a4bba33bc406f6d21c
+      spriteID: 7bd6c31aaf7a200478c6e5bba8c2e0d5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_54
+      name: Capa 2_51
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1664
+        x: 128
+        y: 1792
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 824b50f315abaf849bc1e8ab4133bb85
+      spriteID: 685861ba6b6cca844a73b43c9a229160
       vertices: []
       indices: 
       edges: []
@@ -962,18 +883,18 @@ TextureImporter:
       name: Capa 2_55
       rect:
         serializedVersion: 2
-        x: 384
-        y: 1664
+        x: 640
+        y: 1792
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0ee0536e7f287b438a545dee1731474
+      spriteID: ebbeab0c104b6244898ce9a44b4481e7
       vertices: []
       indices: 
       edges: []
@@ -982,78 +903,18 @@ TextureImporter:
       name: Capa 2_56
       rect:
         serializedVersion: 2
-        x: 512
-        y: 1664
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a302681daaf8bc24d9fe734248eedd04
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_57
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 1664
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 911ad35fbf2da6243af1966b24513b55
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_58
-      rect:
-        serializedVersion: 2
         x: 768
-        y: 1664
+        y: 1792
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58f1d96a931cd6642a5fb9070a18145a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_59
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 1664
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe343ceafed7d82439393045a8fdaf8c
+      spriteID: 1ee7d8f32e0bd994aadadda250479950
       vertices: []
       indices: 
       edges: []
@@ -1063,17 +924,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 1536
+        y: 1664
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1af12c808d69d384186c824a70ddbfa9
+      spriteID: 1402162a047b23244a3decf799b3b433
       vertices: []
       indices: 
       edges: []
@@ -1083,17 +944,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 1536
+        y: 1664
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84d78a7567b179747a2908e59e17be96
+      spriteID: 482b83bac1dfbe74c95027e0067238c3
       vertices: []
       indices: 
       edges: []
@@ -1103,17 +964,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 1536
+        y: 1664
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11e93e6ba31d763479f0df00534cf69f
+      spriteID: d828f2498e98f4b4bbcfde9f0c3d6fc7
       vertices: []
       indices: 
       edges: []
@@ -1123,17 +984,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
-        y: 1536
+        y: 1664
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4032693e3b2eeea47a8ed0a77db11f33
+      spriteID: 5f02a315970e6ac4e9e6a1b10cbcf0ed
       vertices: []
       indices: 
       edges: []
@@ -1143,17 +1004,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 768
-        y: 1536
+        y: 1664
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ba93f3105cd51b47a279bf48967a77c
+      spriteID: dd9d85b221eee5b4495a50002396b860
       vertices: []
       indices: 
       edges: []
@@ -1163,17 +1024,37 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 1536
+        y: 1664
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d221d19a5728564b8c0fe41f14aac7a
+      spriteID: e09a8527627fc6f499e2cb55edd6d349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_72
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc43a6eba5813fa409d36762b9794fc5
       vertices: []
       indices: 
       edges: []
@@ -1182,18 +1063,18 @@ TextureImporter:
       name: Capa 2_73
       rect:
         serializedVersion: 2
-        x: 640
-        y: 1408
+        x: 384
+        y: 1536
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb2f9e447d201c24b9f1c5e65cd7d619
+      spriteID: 1b509f604b08b4442acf5bdaa628ff53
       vertices: []
       indices: 
       edges: []
@@ -1202,38 +1083,78 @@ TextureImporter:
       name: Capa 2_74
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1408
+        x: 512
+        y: 1536
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a95f45a250f1fff46ba20602181707f2
+      spriteID: a4dfd4bdd4dca8a46894444b8aaf35ed
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_84
+      name: Capa 2_75
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1152
+        x: 640
+        y: 1536
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ff3e43cddca85344997fdea5de472e0
+      spriteID: 954de83e15ad7704182ea56194ab1d6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_76
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f41302092200e5448b0766ad4a09fd1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_77
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1536
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bef422140bf9937408e0eb763ae95f45
       vertices: []
       indices: 
       edges: []
@@ -1242,18 +1163,18 @@ TextureImporter:
       name: Capa 2_85
       rect:
         serializedVersion: 2
-        x: 128
-        y: 1152
+        x: 640
+        y: 1408
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043a9b8681cf9ba4e8dd3aa3438c11fc
+      spriteID: a70277e6f429a9b49b16bc26be428cd3
       vertices: []
       indices: 
       edges: []
@@ -1262,218 +1183,18 @@ TextureImporter:
       name: Capa 2_86
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc874654c5fe1b741bd2339667d99517
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_87
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc559e926e54fef47a5c5fd55cbf01fd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_88
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1152
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e97b53a510861ac4e8c6a5871dd909f1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_90
-      rect:
-        serializedVersion: 2
         x: 768
-        y: 1152
+        y: 1408
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cfc5660472512e4ca66c6b2c386a17e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_92
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d3eda9f228577c1448bb66559101ab98
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_93
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 617b6a0c1d1f78640bf56dfec6d1a163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_94
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cc4c423287f4a54478420bc8619d52b4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_95
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80567f01a8125a04789ea3c509dfe766
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_96
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 311a78dc2bab15343a4e3c9497675f9b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_97
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d549979f42e8a7641b9f1e2c4fe68019
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_99
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 1024
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f3c02718a73e674fb175e5725689dd6
+      spriteID: c5df65844029de74a95af5a30c41b53d
       vertices: []
       indices: 
       edges: []
@@ -1482,18 +1203,18 @@ TextureImporter:
       name: Capa 2_100
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 1024
+        x: 0
+        y: 1152
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be7ee70d2bd7e6248ba4649e8bfea6ae
+      spriteID: cca9ff5aa62e92d479597135c183ea1a
       vertices: []
       indices: 
       edges: []
@@ -1502,18 +1223,18 @@ TextureImporter:
       name: Capa 2_101
       rect:
         serializedVersion: 2
-        x: 0
-        y: 896
+        x: 128
+        y: 1152
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dce23ff9f5e06cb4db1c17765aeef48e
+      spriteID: 3a1ca22067874fb47a039b87877dd038
       vertices: []
       indices: 
       edges: []
@@ -1522,18 +1243,18 @@ TextureImporter:
       name: Capa 2_102
       rect:
         serializedVersion: 2
-        x: 128
-        y: 896
+        x: 256
+        y: 1152
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa27133a18885dc46ab7d57bc2d4bd9f
+      spriteID: 67d6e3b97325d8e499257e334f9df79c
       vertices: []
       indices: 
       edges: []
@@ -1542,58 +1263,98 @@ TextureImporter:
       name: Capa 2_103
       rect:
         serializedVersion: 2
-        x: 256
-        y: 896
+        x: 384
+        y: 1152
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86c3166ade7ee814a81a6ff29361826f
+      spriteID: bdca88ae0c10a6a48bc601ddc95631ab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_105
+      name: Capa 2_104
       rect:
         serializedVersion: 2
         x: 512
-        y: 896
+        y: 1152
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d098e320f7c55f449b64e350d25aef09
+      spriteID: 184da5262e3549b46a0d4c9003e895e8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_107
+      name: Capa 2_106
       rect:
         serializedVersion: 2
         x: 768
-        y: 896
+        y: 1152
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23f593eb2af94ff40b6c43deb84dd0cc
+      spriteID: d2b3840c8595ebd4884f88612fff8623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_110
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6c1725ef8e5584eb20a43437f59981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_111
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83393deac3d77264db39a21690a7d6c8
       vertices: []
       indices: 
       edges: []
@@ -1603,17 +1364,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 768
+        y: 1024
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f5b2afd39457444c82ad99d462c5391
+      spriteID: 00f0649a334251f48921a3d8bc2bb684
       vertices: []
       indices: 
       edges: []
@@ -1623,17 +1384,57 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 768
+        y: 1024
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5bef4c4b35fe3c24b934ef637e1dd221
+      spriteID: 4f9f96b6fcec93f40a2711546692d4c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_114
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6a82d475003a46498432f813920d543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_115
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1024
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cd13711944e774d8bd73b36e204a40
       vertices: []
       indices: 
       edges: []
@@ -1643,17 +1444,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 896
-        y: 768
+        y: 1024
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cbcef957353e6b46adb0d00e4fb0845
+      spriteID: b6a3a8bed439bc44088ec51406467ed5
       vertices: []
       indices: 
       edges: []
@@ -1663,37 +1464,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1024
-        y: 768
+        y: 1024
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c892061a6328854c8d5fb3878d48968
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_119
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 640
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d01ea739486a18488f11b1ae75312c8
+      spriteID: 4739a64c41d084c49829ff898f2f69f4
       vertices: []
       indices: 
       edges: []
@@ -1702,18 +1483,18 @@ TextureImporter:
       name: Capa 2_120
       rect:
         serializedVersion: 2
-        x: 128
-        y: 640
+        x: 0
+        y: 896
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1424629d011de8448be33f11c382d83d
+      spriteID: a71054c86df9c174182ca0261cfb06b9
       vertices: []
       indices: 
       edges: []
@@ -1722,18 +1503,18 @@ TextureImporter:
       name: Capa 2_121
       rect:
         serializedVersion: 2
-        x: 256
-        y: 640
+        x: 128
+        y: 896
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2ee6ceba038391448a8f95901e05edfb
+      spriteID: f1ec88cd40ac47943bbbca5c272023ed
       vertices: []
       indices: 
       edges: []
@@ -1742,38 +1523,38 @@ TextureImporter:
       name: Capa 2_122
       rect:
         serializedVersion: 2
-        x: 384
-        y: 640
+        x: 256
+        y: 896
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 650932a44d0499240a75326cf9f9e9aa
+      spriteID: 8fcdc23ef3b978c4aaaf54fa85a1ffef
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_125
+      name: Capa 2_124
       rect:
         serializedVersion: 2
-        x: 896
-        y: 640
+        x: 512
+        y: 896
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4abdbe4d4041ed438c970afc8b94c0c
+      spriteID: 7f10c6d0361d8294d9abdb4ac9daad22
       vertices: []
       indices: 
       edges: []
@@ -1782,58 +1563,18 @@ TextureImporter:
       name: Capa 2_126
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 640
+        x: 768
+        y: 896
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e922589681768d4c907c5e3964d4446
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_127
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 512
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9503e21c3f4c74c41824a0a8d3057dcc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_128
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 512
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 64bb11314f7443548b07e5036fac96d4
+      spriteID: 7c2ba8da32dad9e459bdbb3af56d02ef
       vertices: []
       indices: 
       edges: []
@@ -1842,18 +1583,18 @@ TextureImporter:
       name: Capa 2_132
       rect:
         serializedVersion: 2
-        x: 640
-        y: 512
+        x: 256
+        y: 768
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 496035ad729536c4bb131cd890dbb451
+      spriteID: 51ad8813c8739f649b12db9b8cbdf1a1
       vertices: []
       indices: 
       edges: []
@@ -1862,18 +1603,38 @@ TextureImporter:
       name: Capa 2_133
       rect:
         serializedVersion: 2
-        x: 768
-        y: 512
+        x: 384
+        y: 768
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42b1a0109803787478d6b63b1d57ac7d
+      spriteID: b54219e0f3192a345bf9ccd320f1d1d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_137
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 768
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80dc4ea7fe014904db1ac34fc9a4cd0a
       vertices: []
       indices: 
       edges: []
@@ -1882,38 +1643,18 @@ TextureImporter:
       name: Capa 2_138
       rect:
         serializedVersion: 2
-        x: 256
-        y: 384
+        x: 1024
+        y: 768
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9c1c6567f1f7ac4a8f0928e0bb47c7e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_139
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 384
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5b4e994479112a488907c9f4dd60f14
+      spriteID: dd8864ca6eeb0584baf8b84c973f58f8
       vertices: []
       indices: 
       edges: []
@@ -1922,18 +1663,18 @@ TextureImporter:
       name: Capa 2_140
       rect:
         serializedVersion: 2
-        x: 512
-        y: 384
+        x: 0
+        y: 640
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 879dcc4af850d534c998d4b863e8de2c
+      spriteID: 2b9b2e47ca83f9f4f9e4250f47e96650
       vertices: []
       indices: 
       edges: []
@@ -1942,18 +1683,18 @@ TextureImporter:
       name: Capa 2_141
       rect:
         serializedVersion: 2
-        x: 640
-        y: 384
+        x: 128
+        y: 640
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 074a6b3134d82504380308d8ba5e8ce5
+      spriteID: a2bee0010191eea49bd6073738b05f5e
       vertices: []
       indices: 
       edges: []
@@ -1962,18 +1703,18 @@ TextureImporter:
       name: Capa 2_142
       rect:
         serializedVersion: 2
-        x: 768
-        y: 384
+        x: 256
+        y: 640
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4cb40725dc0acc74f893360f29799a59
+      spriteID: 54d7199e963300a4991e05829b334dd7
       vertices: []
       indices: 
       edges: []
@@ -1982,38 +1723,18 @@ TextureImporter:
       name: Capa 2_143
       rect:
         serializedVersion: 2
-        x: 896
-        y: 384
+        x: 384
+        y: 640
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83501b8e982facf4e86c43070e461b9b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_146
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4d1e4237a8dad2342ba00c87522119db
+      spriteID: 15154d0e78309d9458fd03117d0992b2
       vertices: []
       indices: 
       edges: []
@@ -2022,18 +1743,18 @@ TextureImporter:
       name: Capa 2_147
       rect:
         serializedVersion: 2
-        x: 384
-        y: 256
+        x: 896
+        y: 640
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: da64f93d8d85fa442bec483eb1debdbb
+      spriteID: a27130daabffcc54092ec1ee7476a660
       vertices: []
       indices: 
       edges: []
@@ -2042,38 +1763,18 @@ TextureImporter:
       name: Capa 2_148
       rect:
         serializedVersion: 2
-        x: 512
-        y: 256
+        x: 1024
+        y: 640
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50ecb038e5b7fba449516be0d01b778b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Capa 2_149
-      rect:
-        serializedVersion: 2
-        x: 640
-        y: 256
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 69a192ba17167e742b8e9be0a289f4d2
+      spriteID: 4b5f1631e836cb446af18ccb1a518855
       vertices: []
       indices: 
       edges: []
@@ -2082,18 +1783,18 @@ TextureImporter:
       name: Capa 2_150
       rect:
         serializedVersion: 2
-        x: 768
-        y: 256
+        x: 0
+        y: 512
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 853f897c43ff731448baaadd7a408e76
+      spriteID: d41a75157c532dd4c9220723aae519db
       vertices: []
       indices: 
       edges: []
@@ -2102,24 +1803,304 @@ TextureImporter:
       name: Capa 2_151
       rect:
         serializedVersion: 2
-        x: 896
-        y: 256
+        x: 128
+        y: 512
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eb998bf56a01a4a43bf446d3c4db89b9
+      spriteID: f3e9dcc50253aaf4ba69ad170c8280da
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_157
+      name: Capa 2_155
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62edd53900d1538458ab35d97fa97418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_156
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 512
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad96714f1487dc5478fde4880bc1eb77
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_162
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bb062c0007ba9a43a01d35a87247b86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_163
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9a7dd83e9d1ea4c84ed986b0c07642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_164
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37c948ec3179de74e94a0d3ddc6814c9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_165
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef371fb919d60d4a9e6779b54030053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_166
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6693e4b594a302b4686e9b32d2221e60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_167
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 384
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fe8b9880d7d424896852400b8b7844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_172
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f13c30ecaedc2747a7b565e2eed285c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_173
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff5e1171c058f7449bc04834291a3eb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_174
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7287185cb3f6e254ea42b4b763f1ec4e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_175
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd87130662c803e42a440d8fa6dd4158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_176
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79339eb7d352cb4da2e32508232ce63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_177
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 256
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 340d6eec49c1e1945b0c33cdfcf993b4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_185
       rect:
         serializedVersion: 2
         x: 640
@@ -2127,19 +2108,19 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 653f2ef9c79b190488975b1489d43779
+      spriteID: dd71cbffd2bfe2944b5df8f50ebd089e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Capa 2_158
+      name: Capa 2_186
       rect:
         serializedVersion: 2
         x: 768
@@ -2147,13 +2128,193 @@ TextureImporter:
         width: 128
         height: 128
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a5edc73301a482e43809116f3d749589
+      spriteID: 0582622b80e8bbb46be8f931821045b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b9bf59a6245c545a6195b542f6bc27
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_191
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0835a2ba431e7aa4a99343e0827f318c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_192
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7339c3cce5d28459ae9d6c6152dded
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_193
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be44b4c442ec6745bbd58123b3502b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_194
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eedaacb35137494b937635adb379289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_195
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5ccfd26924fd445bb3ecc2b61cce14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_196
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65685701764979c40844d8c4d13878f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_197
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30482586d283d554395bb1ff73470e45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capa 2_198
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5e5e747259be34cbc378152759a0f2
       vertices: []
       indices: 
       edges: []

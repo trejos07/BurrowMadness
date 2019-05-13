@@ -6,7 +6,7 @@ using System.Linq;
 public class MisionManager : MonoBehaviour
 {
     public static MisionManager Instance;
-    [SerializeField] int baseRedward=100;
+    [SerializeField] int baseRedward=250;
     List<List<MisionInfo>> misionsPerWorld;
     List<List<subMisionInfo>> posibleSubMisionsPerWorld = new List<List<subMisionInfo>>();
 
@@ -42,10 +42,10 @@ public class MisionManager : MonoBehaviour
         if(misionsPerWorld ==null || misionsPerWorld.Count==0)
         {
             misionsPerWorld = new List<List<MisionInfo>>();
-            for (int i = 0; i < GameManager.ins.Worlds.Count; i++)
+            for (int i = 0; i < GameManager.Instance.Worlds.Count; i++)
             {
-                posibleSubMisionsPerWorld.Add(createWorldSubmisions(GameManager.ins.Worlds[i]));
-                List<MisionInfo> wMisions = createWorldMisions(GameManager.ins.Worlds[i], 5);
+                posibleSubMisionsPerWorld.Add(createWorldSubmisions(GameManager.Instance.Worlds[i]));
+                List<MisionInfo> wMisions = createWorldMisions(GameManager.Instance.Worlds[i], 5);
                 misionsPerWorld.Add(wMisions);
             }
             SaveMisions();
@@ -53,7 +53,7 @@ public class MisionManager : MonoBehaviour
     }
     public List<subMisionInfo>GetSubMisionInfos(WorldInfo info, int nroSubMisions)
     {
-        int n = GameManager.ins.Worlds.IndexOf(info);
+        int n = GameManager.Instance.Worlds.IndexOf(info);
         List<subMisionInfo> subMisionInfos = new List<subMisionInfo>();
 
         for (int i = 0; i < nroSubMisions; i++)
@@ -90,22 +90,22 @@ public class MisionManager : MonoBehaviour
     }
     public void SaveMisions()
     {
-        XMLManager.SaveData(misionsPerWorld,XMLManager.MISIONS_FOLDER_NAME+XMLManager.MISIONS_FILE_NAME+ ".xml");
+        XMLManager.SaveData(misionsPerWorld,XMLManager.MISIONS_FOLDER_NAME,XMLManager.MISIONS_FILE_NAME+".xml");
 
     }
     public MisionInfo GetMisionFromWorld(WorldInfo world)
     {
-        int n = GameManager.ins.Worlds.IndexOf(world);
+        int n = GameManager.Instance.Worlds.IndexOf(world);
         List<MisionInfo> misions = misionsPerWorld[n];
         return misions[Random.Range(0, misions.Count)];
 
     }
     public void ClaimMisionRedward(MisionInfo info)
     {
-        int i = GameManager.ins.GetWorldIndex(info.wname);
+        int i = GameManager.Instance.GetWorldIndex(info.wname);
         if (info.completed && misionsPerWorld[i].Contains(info))
         {
-            GameManager.ins.SetGoldRedward(info.reward);
+            GameManager.Instance.SetGoldRedward(info.reward);
             MisionsPerWorld[i].Remove(info);
             SaveMisions();
         }

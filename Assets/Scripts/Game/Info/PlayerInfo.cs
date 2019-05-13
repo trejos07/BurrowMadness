@@ -10,6 +10,7 @@ public class PlayerInfo
     private int gold;
     private int gems;
     private List<InvSlot> inventorty;
+    private List<WeaponInfo> weapons;
 
     public PlayerInfo()
     {
@@ -21,8 +22,6 @@ public class PlayerInfo
         gold=0;
         gems=0;
     }
-
-
     #region Accesores
     public string Name
     {
@@ -84,10 +83,22 @@ public class PlayerInfo
             inventorty = value;
         }
     }
+    public List<WeaponInfo> Weapons
+    {
+        get
+        {
+            return weapons;
+        }
+
+        set
+        {
+            weapons = value;
+        }
+    }
     #endregion
 
     public void Save()
     {
-        XMLManager.SaveData(this, XMLManager.PLAYERINFO_FOLDER_NAME + name + ".xml");
+        XMLManager.SaveData(this, XMLManager.PLAYERINFO_FOLDER_NAME, name+".xml");
     }
 }

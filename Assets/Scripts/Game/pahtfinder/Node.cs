@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
+using Priority_Queue;
 
-public class Node {
+public class Node: FastPriorityQueueNode {
 
     private Vector3Int mPosition;//X Position in the Node Array
     private Vector2Int gPos;//X Position in the Node Array
     private Vector3 worldPos;
 
 
-    private bool bIsWall;//Tells the program if this node is being obstructed.
+    private bool bIsWall;//Tells the program if this node is being obstructed. 
 
     private Node ParentNode;//For the AStar algoritm, will store what node it previously came from so it cn trace the shortest path.
 
@@ -37,7 +38,6 @@ public class Node {
             return mPosition;
         }
     }
-
 
     public bool BIsWall
     {

@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ObjPool<T> where T : class, new()
+public class ObjPool<T> where T : class
 {
-    
-    static ObjPool<T> me;
+    MonoBehaviour owner;
+    public static ObjPool<T> Me;
     int size;
 
     List<T> objects = new List<T>();
 
-    public ObjPool(int size)
+    public ObjPool(MonoBehaviour _owner, int size)
     {
         this.size = size;
         if (Me != null)
@@ -18,20 +18,20 @@ public class ObjPool<T> where T : class, new()
 
         for (int i = 0; i < size; i++)
         {
-            objects.Add(new T());
+            //objects.Add();
         }
     }
 
-    public static ObjPool<T> Me
+    public MonoBehaviour Owner
     {
         get
         {
-            return me;
+            return owner;
         }
 
         set
         {
-            me = value;
+            owner = value;
         }
     }
 
